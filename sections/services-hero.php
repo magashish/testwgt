@@ -1,10 +1,14 @@
-<!-- =============== ABOUT PAGE HERO =============== -->
-<section id="about-hero" class="inner-hero" aria-label="About Hero">
+<!-- =============== SERVICES PAGE HERO =============== -->
+<section id="services-hero" class="inner-hero" aria-label="Services Hero">
   <div class="container position-relative">
     <div class="row align-items-center gy-5">
 
       <!-- Left: Copy -->
       <div class="col-lg-7">
+
+        <span class="inner-hero-inline">
+          <i class="bi bi-star-fill me-1"></i> 5 Star Dumpster Rentals
+        </span>
 
         <!-- Special Offer -->
         <div class="special-offer-badge">
@@ -25,8 +29,8 @@
              style="font-size:.78rem;color:var(--accent);">Read Reviews ›</a>
         </div>
 
-        <h1>You Are Our Top Priority</h1>
-        <p class="hero-sub">Our Dumpster Rental Services Are Built Around Your Needs</p>
+        <h1>Roll Off Dumpster Rentals In Sanford</h1>
+        <p class="hero-sub">We offer the #1 Roll Off Dumpster Rentals in Sanford and the surrounding areas.</p>
 
         <div class="hero-cta-wrap d-flex flex-wrap mt-4">
           <a href="tel:+13215941204" class="btn btn-accent btn-lg me-2 mb-2">
@@ -44,9 +48,9 @@
         <div class="row g-3">
           <div class="col-6">
             <div class="hero-badge-box">
-              <div class="hb-icon"><i class="bi bi-people-fill"></i></div>
-              <div class="hb-num">100%</div>
-              <div class="hb-label">Customer Focused</div>
+              <div class="hb-icon"><i class="bi bi-truck"></i></div>
+              <div class="hb-num">Same Day</div>
+              <div class="hb-label">Delivery Available</div>
             </div>
           </div>
           <div class="col-6">
@@ -58,16 +62,16 @@
           </div>
           <div class="col-6">
             <div class="hero-badge-box">
-              <div class="hb-icon"><i class="bi bi-truck"></i></div>
-              <div class="hb-num">Same Day</div>
-              <div class="hb-label">Delivery Available</div>
+              <div class="hb-icon"><i class="bi bi-tags-fill"></i></div>
+              <div class="hb-num">Flexible</div>
+              <div class="hb-label">Pricing Options</div>
             </div>
           </div>
           <div class="col-6">
             <div class="hero-badge-box">
-              <div class="hb-icon"><i class="bi bi-shield-check"></i></div>
-              <div class="hb-num">Protected</div>
-              <div class="hb-label">Driveway Safe</div>
+              <div class="hb-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div class="hb-num">50 Mile</div>
+              <div class="hb-label">Service Radius</div>
             </div>
           </div>
         </div>

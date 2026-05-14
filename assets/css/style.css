@@ -167,26 +167,41 @@ img {
   color: var(--primary) !important;
 }
 
-/* ---- Hero (shared: homepage + inner pages) ---- */
-#hero,
-#about-hero {
+/* ---- Hero (homepage) ---- */
+#hero {
     position: relative;
     background: linear-gradient(135deg, #2e2e2e 0%, #2e2e2e 60%, #2e2e2e 100%);
     padding: 110px 0 80px;
     overflow: hidden;
 }
 
-#about-hero h1 {
+/* ---- Inner Page Hero (shared class for all inner pages) ---- */
+.inner-hero {
+    position: relative;
+    background: linear-gradient(135deg, #2e2e2e 0%, #2e2e2e 60%, #2e2e2e 100%);
+    padding: 110px 0 80px;
+    overflow: hidden;
+}
+.inner-hero h1 {
   font-size: clamp(2rem, 5vw, 3.4rem);
   color: var(--white);
   line-height: 1.15;
   margin-bottom: 1rem;
 }
-#about-hero .hero-sub {
+.inner-hero .hero-sub {
   font-size: 1.15rem;
   color: var(--accent);
   font-weight: 700;
   margin-bottom: 1rem;
+}
+.inner-hero .hero-inline {
+  font-size: .85rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: .6rem;
+  display: block;
 }
 /*#hero::before {
   content: '';
