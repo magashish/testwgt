@@ -33,12 +33,19 @@
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
         <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#dumpsters">Dumpsters</a></li>
-        <li class="nav-item"><a class="nav-link" href="#process">How It Works</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#locations">Locations</a></li>
-        <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">Dumpsters</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="20-yard-dumpster-rental.php">20 Yard Dumpsters</a></li>
+            <li><a class="dropdown-item" href="30-yard-dumpster-rental.php">30 Yard Dumpsters</a></li>
+            <li><a class="dropdown-item" href="40-yard-dumpster-rental.php">40 Yard Dumpsters</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.php">Our Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="locations.php">Locations</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
         <li class="nav-item ms-lg-2">
           <a class="nav-link btn-nav-cta" href="tel:+13215941204">
             <i class="bi bi-telephone-fill me-1"></i> (321) 594-1204

@@ -167,6 +167,32 @@ img {
   color: var(--primary) !important;
 }
 
+/* ---- Navbar Dropdown ---- */
+.navbar-wgt .dropdown-menu {
+  background-color: var(--primary);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 8px;
+  padding: .4rem 0;
+  margin-top: .25rem;
+  min-width: 200px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.4);
+}
+.navbar-wgt .dropdown-item {
+  color: rgba(255,255,255,.88);
+  font-weight: 600;
+  font-size: .9rem;
+  padding: .55rem 1.25rem;
+  transition: background .2s, color .2s;
+}
+.navbar-wgt .dropdown-item:hover,
+.navbar-wgt .dropdown-item:focus {
+  background-color: var(--primary-mid);
+  color: var(--accent);
+}
+.navbar-wgt .dropdown-toggle::after {
+  vertical-align: .2em;
+}
+
 /* ---- Hero (homepage) ---- */
 #hero {
     position: relative;
