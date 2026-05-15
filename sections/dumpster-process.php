@@ -1,14 +1,13 @@
-<!-- =============== 40 YARD — BOOKING PROCESS =============== -->
-<section id="40yd-process" aria-labelledby="40yd-process-heading">
+<!-- =============== DUMPSTER SIZE — BOOKING PROCESS =============== -->
+<section id="dumpster-process" aria-labelledby="dumpster-process-heading">
   <div class="container">
 
     <div class="text-center mb-4 fade-up">
       <span class="section-label">Our Process</span>
       <div class="section-divider mx-auto"></div>
-      <h2 id="40yd-process-heading">How To Book A 40 Yard Dumpster Rental</h2>
+      <h2 id="dumpster-process-heading">How To Book A <?php echo $dumpster['yards']; ?> Yard Dumpster Rental</h2>
       <p class="mt-3 mx-auto" style="max-width:600px;color:var(--text-muted);">
-        At We Got This Dumpster Rentals, we make it easy to get a 40 yard dumpster rented as soon
-        as the same day. Follow these three easy steps to get a dumpster delivered on site fast!
+        <?php echo $dumpster['process_intro']; ?>
       </p>
     </div>
 
@@ -16,9 +15,9 @@
 
       <div class="col-lg-6 col-12 fade-up">
         <div class="dumspter-img h-100">
-          <img src="./assets/images/dumpstersize_icondumpster-12.png"
+          <img src="./assets/images/<?php echo $dumpster['icon_img']; ?>"
                class="w-100 object-fit-contain img-fluid"
-               alt="40 Yard Roll Off Dumpster Rental">
+               alt="<?php echo $dumpster['yards']; ?> Yard Roll Off Dumpster Rental">
         </div>
       </div>
 

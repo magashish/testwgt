@@ -1,16 +1,14 @@
-<!-- =============== 30 YARD — WHY CHOOSE US =============== -->
-<section id="30yd-whychoose" aria-labelledby="30yd-whychoose-heading">
+<!-- =============== DUMPSTER SIZE — WHY CHOOSE US =============== -->
+<section id="dumpster-whychoose" aria-labelledby="dumpster-whychoose-heading">
   <div class="container">
     <div class="row align-items-center gy-5">
 
       <div class="col-lg-5 fade-up">
         <span class="section-label" style="color:var(--accent);">Our Commitment</span>
         <div class="section-divider"></div>
-        <h2 id="30yd-whychoose-heading">Why Choose Us For 30 Yard Dumpster Rentals</h2>
+        <h2 id="dumpster-whychoose-heading">Why Choose Us For <?php echo $dumpster['yards']; ?> Yard Dumpster Rentals</h2>
         <p class="mt-3" style="color:var(--text-muted);">
-          We prioritize our customers and make it as convenient as possible to get the dumpster
-          rental you need at a great price. We always do our best to work with our customers to
-          provide 5 star service. Let us make it easy for you to get the level of service you need.
+          <?php echo $dumpster['whychoose_par']; ?>
         </p>
         <div class="d-flex flex-wrap gap-2 mt-4">
           <a href="tel:+13215941204" class="btn btn-accent btn-lg">
@@ -30,10 +28,7 @@
               <div class="wi-icon"><i class="bi bi-tags-fill"></i></div>
               <div>
                 <h5>Flexible Pricing</h5>
-                <p>
-                  We offer affordable, transparent pricing on all 30 yard dumpster rentals. We
-                  work with your budget and never surprise you with hidden fees.
-                </p>
+                <p><?php echo $dumpster['flexible_pricing_par']; ?></p>
               </div>
             </div>
           </div>

@@ -1,14 +1,15 @@
-<!-- =============== 20 YARD — WHAT'S INCLUDED =============== -->
-<section id="20yd-included" aria-labelledby="20yd-included-heading" style="background:var(--light-bg);">
+<!-- =============== DUMPSTER SIZE — WHAT'S INCLUDED =============== -->
+<section id="dumpster-included" aria-labelledby="dumpster-included-heading" style="background:var(--light-bg);">
   <div class="container">
 
     <div class="text-center mb-5 fade-up">
       <span class="section-label">What You Get</span>
       <div class="section-divider mx-auto"></div>
-      <h2 id="20yd-included-heading">What Is Included With A 20 Yard Dumpster Rental?</h2>
+      <h2 id="dumpster-included-heading">What Is Included With A <?php echo $dumpster['yards']; ?> Yard Dumpster Rental?</h2>
       <p class="mt-3 mx-auto" style="max-width:620px;color:var(--text-muted);">
-        When you rent a 20 yard dumpster from us, everything you need is included. No hidden
-        fees, no surprises — just a simple, affordable rental built around you.
+        When you rent a <?php echo $dumpster['yards']; ?> yard dumpster from us, everything you
+        need is included. No hidden fees, no surprises — just a simple, affordable rental built
+        around you.
       </p>
     </div>
 
@@ -20,10 +21,11 @@
           <div style="font-size:2.4rem;color:var(--accent);margin-bottom:.75rem;">
             <i class="bi bi-box-seam-fill"></i>
           </div>
-          <h5 style="font-weight:800;color:var(--primary);">Up To 2 Tons Disposal</h5>
+          <h5 style="font-weight:800;color:var(--primary);">Up To <?php echo $dumpster['tons']; ?> Tons Disposal</h5>
           <p style="font-size:.9rem;color:var(--text-muted);margin-top:.5rem;">
-            Each 20 yard rental includes up to <strong>2 tons (4,000 lbs)</strong> of disposal.
-            Perfect for most remodels, clean-outs, and yard projects.
+            Each <?php echo $dumpster['yards']; ?> yard rental includes up to
+            <strong><?php echo $dumpster['tons']; ?> tons (<?php echo $dumpster['lbs']; ?> lbs)</strong>
+            of disposal. <?php echo $dumpster['incl_use_case']; ?>
           </p>
           <div class="mt-3 p-2 rounded" style="background:var(--light-bg);font-size:.8rem;color:var(--text-muted);font-style:italic;">
             <i class="bi bi-info-circle me-1"></i>

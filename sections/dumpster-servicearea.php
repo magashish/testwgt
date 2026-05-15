@@ -1,5 +1,5 @@
-<!-- =============== 40 YARD — SERVICE AREA =============== -->
-<section id="40yd-servicearea" aria-labelledby="40yd-servicearea-heading" style="background:var(--light-bg);">
+<!-- =============== DUMPSTER SIZE — SERVICE AREA =============== -->
+<section id="dumpster-servicearea" aria-labelledby="dumpster-servicearea-heading" style="background:var(--light-bg);">
   <div class="container">
 
     <div class="row align-items-center gy-5">
@@ -7,24 +7,20 @@
       <div class="col-lg-6 fade-up">
         <span class="section-label">Service Area</span>
         <div class="section-divider"></div>
-        <h2 id="40yd-servicearea-heading">40 Yard Dumpster Rentals Near You</h2>
-        <p class="mt-3">
-          We offer 40 yard dumpster rentals in a 50 mile radius around Sanford, FL. We are locally
-          owned and operated. If you need a 40 yard dumpster rental delivered near you, we have
-          you covered.
-        </p>
+        <h2 id="dumpster-servicearea-heading"><?php echo $dumpster['yards']; ?> Yard Dumpster Rentals Near You</h2>
+        <p class="mt-3"><?php echo $dumpster['area_par']; ?></p>
 
         <p class="mt-3" style="font-weight:700;color:var(--primary);">Our Service Area:</p>
 
         <?php
-        $serviceAreas40 = [
+        $serviceAreas = [
           'Belle Isle', 'Edgewood', 'Maitland', 'Orlando', 'DeLand',
           'Orange City', 'Port Orange', 'New Smyrna Beach', 'Daytona Beach',
           'DeBary', 'Sanford', 'Longwood', 'Altamonte Springs',
         ];
         ?>
         <div class="mb-4">
-          <?php foreach ($serviceAreas40 as $city): ?>
+          <?php foreach ($serviceAreas as $city): ?>
             <a href="#contact" class="location-tag">
               <i class="bi bi-geo-alt-fill me-1" style="font-size:.75rem;"></i>
               <?php echo htmlspecialchars($city); ?>

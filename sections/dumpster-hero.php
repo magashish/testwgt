@@ -1,5 +1,5 @@
-<!-- =============== 20 YARD HERO =============== -->
-<section id="dumpster-20yd-hero" class="inner-hero" aria-label="20 Yard Dumpster Hero">
+<!-- =============== DUMPSTER SIZE HERO =============== -->
+<section id="dumpster-hero" class="inner-hero" aria-label="<?php echo $dumpster['yards']; ?> Yard Dumpster Hero">
   <div class="container position-relative">
     <div class="row align-items-center gy-5">
 
@@ -24,11 +24,12 @@
              style="font-size:.78rem;color:var(--accent);">Read Reviews ›</a>
         </div>
 
-        <h1>20 Yard Dumpster Rentals</h1>
+        <h1><?php echo $dumpster['yards']; ?> Yard Dumpster Rentals</h1>
         <p class="hero-sub">Get The Dumpster Rental You Need At The Price You Want</p>
         <p class="hero-par">
-          We offer 20 yard roll off dumpster rentals in Orange, Seminole, and Volusia Counties and
-          the surrounding areas. Our dumpster rentals are affordable, fast, and built around you.
+          We offer <?php echo $dumpster['yards']; ?> yard roll off dumpster rentals in Orange,
+          Seminole, and Volusia Counties and the surrounding areas. Our dumpster rentals are
+          affordable, fast, and built around you.
         </p>
 
         <div class="hero-cta-wrap d-flex flex-wrap mt-3">
@@ -47,7 +48,7 @@
           <div class="col-6">
             <div class="hero-badge-box">
               <div class="hb-icon"><i class="bi bi-rulers"></i></div>
-              <div class="hb-num">20 Yard</div>
+              <div class="hb-num"><?php echo $dumpster['yards']; ?> Yard</div>
               <div class="hb-label">Roll-Off Dumpster</div>
             </div>
           </div>
