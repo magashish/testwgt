@@ -1,0 +1,21 @@
+<!-- =============== BRANDS =============== -->
+<section id="brands" aria-labelledby="brands-heading">
+  <div class="container">
+
+    <div class="text-center mb-4 fade-up">
+      <span class="section-label">Our Partners</span>
+      <div class="section-divider mx-auto"></div>
+      <h2 id="brands-heading">Trusted Products From Industry Leaders</h2>
+      <p class="mt-2" style="color:var(--muted);font-size:.9rem;">
+        We work with the most respected manufacturers in the industry.
+      </p>
+    </div>
+
+    <div class="brands-track fade-up">
+      <?php foreach ($config['brands'] as $brand): ?>
+        <div class="brand-pill"><?php echo htmlspecialchars($brand); ?></div>
+      <?php endforeach; ?>
+    </div>
+
+  </div>
+</section>
