@@ -68,11 +68,26 @@
         </li>
 
         <!-- Locations dropdown — built from $config -->
+        <?php
+        $location_slugs = [
+          'Fremont'      => 'fremont',
+          'Sandusky'     => 'sandusky',
+          'Port Clinton' => 'port-clinton',
+          'Clyde'        => 'clyde',
+          'Bellevue'     => 'bellevue',
+          'Norwalk'      => 'norwalk',
+          'Tiffin'       => 'tiffin',
+          'Findlay'      => 'findlay',
+          'Fostoria'     => 'fostoria',
+          'Toledo'       => 'toledo',
+        ];
+        ?>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Locations</a>
           <ul class="dropdown-menu">
             <?php foreach ($config['locations'] as $loc): ?>
-              <li><a class="dropdown-item" href="#"><?php echo $loc; ?></a></li>
+              <?php $loc_slug = $location_slugs[$loc] ?? strtolower(str_replace(' ', '-', $loc)); ?>
+              <li><a class="dropdown-item" href="location.php?city=<?php echo $loc_slug; ?>"><?php echo $loc; ?></a></li>
             <?php endforeach; ?>
           </ul>
         </li>

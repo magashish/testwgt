@@ -14,16 +14,20 @@
             areas. If you don't see your city, give us a call — we're always expanding our reach.
           </p>
 
+          <?php
+          $loc_slugs = ['Fremont'=>'fremont','Sandusky'=>'sandusky','Port Clinton'=>'port-clinton','Clyde'=>'clyde','Bellevue'=>'bellevue','Norwalk'=>'norwalk','Tiffin'=>'tiffin','Findlay'=>'findlay','Fostoria'=>'fostoria','Toledo'=>'toledo'];
+          ?>
           <div class="mt-3 mb-4">
             <?php foreach ($config['locations'] as $city): ?>
-              <span class="city-tag">
+              <?php $s = $loc_slugs[$city] ?? strtolower(str_replace(' ', '-', $city)); ?>
+              <a href="location.php?city=<?php echo $s; ?>" class="city-tag">
                 <i class="bi bi-geo-alt-fill me-1" style="font-size:.7rem;color:var(--red);"></i>
                 <?php echo htmlspecialchars($city); ?>
-              </span>
+              </a>
             <?php endforeach; ?>
           </div>
 
-          <a href="#" class="btn-outline-white">VIEW ALL LOCATIONS <i class="bi bi-arrow-right ms-1"></i></a>
+          <a href="location.php?city=fremont" class="btn-outline-white">VIEW ALL LOCATIONS <i class="bi bi-arrow-right ms-1"></i></a>
         </div>
       </div>
     </div>

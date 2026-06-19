@@ -860,6 +860,116 @@ footer a:hover { color: var(--white); }
 .page-hero-content { position: relative; z-index: 1; }
 
 /* ============================================================
+   LOCATION PAGES
+   ============================================================ */
+#location-hero {
+  background: linear-gradient(105deg, var(--navy-dark) 0%, var(--navy-mid) 60%, #1e3060 100%);
+  padding: 5rem 0 0;
+  position: relative;
+  overflow: hidden;
+}
+#location-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+#location-content  { background: var(--white); }
+#location-services { background: var(--light-bg); }
+#location-reviews  { background: var(--white); }
+
+/* Popular service cards */
+.loc-service-card {
+  display: flex;
+  align-items: center;
+  gap: .85rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem;
+  text-decoration: none;
+  color: var(--navy);
+  transition: border-color .2s, box-shadow .2s, transform .2s;
+  height: 100%;
+}
+.loc-service-card:hover {
+  border-color: var(--red);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  color: var(--navy);
+}
+.loc-service-card > i {
+  font-size: 1.4rem;
+  color: var(--red);
+  flex-shrink: 0;
+}
+.loc-svc-title {
+  font-family: var(--font-heading);
+  font-size: .82rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.loc-svc-desc {
+  font-size: .75rem;
+  color: var(--muted);
+  margin-top: .15rem;
+}
+
+/* Contact sidebar card */
+.loc-contact-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.loc-contact-header {
+  background: var(--navy);
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  padding: .85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.loc-contact-header i { color: var(--red); }
+.loc-contact-body { padding: 1.25rem; background: var(--white); }
+.loc-contact-row {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  font-size: .88rem;
+  margin-bottom: .75rem;
+  color: var(--navy);
+}
+.loc-contact-row i { color: var(--red); font-size: .9rem; flex-shrink: 0; }
+.loc-contact-row a { color: var(--navy); text-decoration: none; font-weight: 600; }
+.loc-contact-row a:hover { color: var(--red); }
+
+/* Nearby card */
+.loc-nearby-card {
+  background: var(--light-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+.loc-nearby-card h6 {
+  font-family: var(--font-heading);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: .75rem;
+}
+.loc-nearby-card h6 i { color: var(--red); }
+.loc-nearby-tags { display: flex; flex-wrap: wrap; gap: .35rem; }
+
+/* ============================================================
    SERVICE PAGES
    ============================================================ */
 #service-hero {
