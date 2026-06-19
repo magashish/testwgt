@@ -56,9 +56,16 @@
         </li>
 
         <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="reviews.php">Reviews</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+
+        <!-- Company dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Company</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="gallery.php"><i class="bi bi-images me-2"></i>Gallery</a></li>
+            <li><a class="dropdown-item" href="reviews.php"><i class="bi bi-star-fill me-2"></i>Reviews</a></li>
+            <li><a class="dropdown-item" href="contact.php"><i class="bi bi-envelope-fill me-2"></i>Contact</a></li>
+          </ul>
+        </li>
 
         <!-- Locations dropdown — built from $config -->
         <li class="nav-item dropdown">
