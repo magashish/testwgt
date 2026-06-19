@@ -33,7 +33,7 @@
 
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-        <li class="nav-item"><a class="nav-link active" href="index.php">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
 
         <!-- Residential dropdown — built from $config -->
         <li class="nav-item dropdown">
@@ -55,10 +55,10 @@
           </ul>
         </li>
 
-        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="reviews.php">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
 
         <!-- Locations dropdown — built from $config -->
         <li class="nav-item dropdown">

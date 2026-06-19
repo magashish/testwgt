@@ -22,10 +22,10 @@
       <div class="col-lg-2 col-md-3 col-6">
         <h5>Quick Links</h5>
         <a href="index.php">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Gallery</a>
-        <a href="#">Reviews</a>
-        <a href="#">Contact</a>
+        <a href="about.php">About Us</a>
+        <a href="gallery.php">Gallery</a>
+        <a href="reviews.php">Reviews</a>
+        <a href="contact.php">Contact</a>
         <a href="#">Locations</a>
       </div>
 

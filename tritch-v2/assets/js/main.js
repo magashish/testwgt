@@ -59,6 +59,25 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+/* ---- Gallery filter ---- */
+(function () {
+  const btns = document.querySelectorAll('.gf-btn');
+  const items = document.querySelectorAll('.gallery-item');
+  if (!btns.length) return;
+
+  btns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      btns.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      items.forEach((item) => {
+        const match = filter === 'all' || item.dataset.cat === filter;
+        item.classList.toggle('hidden', !match);
+      });
+    });
+  });
+})();
+
 /* ---- Active nav link on scroll ---- */
 (function () {
   const sections = document.querySelectorAll('section[id]');
