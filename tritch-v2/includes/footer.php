@@ -33,9 +33,9 @@
       <div class="col-lg-3 col-md-3 col-6">
         <h5>Our Services</h5>
         <?php foreach ($config['residential_services'] as $svc): ?>
-          <a href="#"><?php echo $svc['title']; ?></a>
+          <a href="service.php?s=<?php echo $svc['slug']; ?>"><?php echo $svc['title']; ?></a>
         <?php endforeach; ?>
-        <a href="#">Commercial Doors</a>
+        <a href="service.php?s=commercial-overhead-doors">Commercial Doors</a>
       </div>
 
       <!-- Contact -->

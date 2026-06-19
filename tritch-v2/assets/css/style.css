@@ -860,6 +860,154 @@ footer a:hover { color: var(--white); }
 .page-hero-content { position: relative; z-index: 1; }
 
 /* ============================================================
+   SERVICE PAGES
+   ============================================================ */
+#service-hero {
+  background: linear-gradient(105deg, var(--navy-dark) 0%, var(--navy-mid) 60%, #1e3060 100%);
+  padding: 5rem 0 0;
+  position: relative;
+  overflow: hidden;
+}
+#service-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.service-breadcrumb {
+  position: relative;
+  z-index: 1;
+  background: rgba(0,0,0,.2);
+  border-top: 1px solid rgba(255,255,255,.07);
+  padding: .65rem 0;
+  margin-top: 3rem;
+}
+.breadcrumb-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin: 0;
+  padding: 0;
+  font-size: .78rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.breadcrumb-list li { display: flex; align-items: center; }
+.breadcrumb-list a { color: rgba(255,255,255,.6); text-decoration: none; }
+.breadcrumb-list a:hover { color: var(--white); }
+.breadcrumb-list .active { color: rgba(255,255,255,.4); }
+.breadcrumb-list i { font-size: .65rem; color: rgba(255,255,255,.3); }
+
+#service-content { background: var(--white); }
+
+.service-benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.service-benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: .65rem;
+  padding: .5rem 0;
+  font-size: .92rem;
+  font-weight: 600;
+  color: var(--navy);
+  border-bottom: 1px solid var(--border);
+}
+.service-benefits-list li:last-child { border-bottom: none; }
+.service-benefits-list li i { color: var(--red); flex-shrink: 0; margin-top: 2px; }
+
+.service-trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem 1.25rem;
+  background: var(--light-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+}
+.service-trust-item {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-family: var(--font-heading);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+.service-trust-item i { color: var(--red); font-size: .9rem; }
+
+#related-services { background: var(--light-bg); padding: 3rem 0; }
+#related-services h2 { font-size: 1.3rem; }
+
+.related-service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem .75rem;
+  text-align: center;
+  color: var(--navy);
+  text-decoration: none;
+  height: 100%;
+  transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+.related-service-card i { font-size: 1.4rem; color: var(--red); }
+.related-service-card span { font-family: var(--font-heading); font-size: .76rem; font-weight: 700; line-height: 1.3; }
+.related-service-card:hover {
+  border-color: var(--red);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+  color: var(--navy);
+}
+
+#service-faqs { background: var(--white); }
+
+.service-accordion .accordion-item {
+  border: 1px solid var(--border);
+  border-radius: 8px !important;
+  margin-bottom: .5rem;
+  overflow: hidden;
+}
+.service-accordion .accordion-button {
+  font-family: var(--font-heading);
+  font-size: .9rem;
+  font-weight: 800;
+  color: var(--navy);
+  background: var(--white);
+  padding: 1.1rem 1.25rem;
+  box-shadow: none;
+}
+.service-accordion .accordion-button:not(.collapsed) {
+  color: var(--red);
+  background: rgba(196,30,30,.04);
+}
+.service-accordion .accordion-button::after {
+  filter: none;
+}
+.service-accordion .accordion-button:not(.collapsed)::after {
+  filter: brightness(0) saturate(100%) invert(17%) sepia(97%) saturate(2600%) hue-rotate(350deg) brightness(90%);
+}
+.service-accordion .accordion-body {
+  font-size: .9rem;
+  color: var(--steel);
+  line-height: 1.7;
+  padding: .75rem 1.25rem 1.25rem;
+}
+
+/* ============================================================
    ABOUT — STORY & STATS
    ============================================================ */
 #about-story { background: var(--white); }

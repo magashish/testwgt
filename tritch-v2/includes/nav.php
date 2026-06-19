@@ -40,7 +40,7 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Residential</a>
           <ul class="dropdown-menu">
             <?php foreach ($config['residential_services'] as $svc): ?>
-              <li><a class="dropdown-item" href="#"><?php echo $svc['title']; ?></a></li>
+              <li><a class="dropdown-item" href="service.php?s=<?php echo $svc['slug']; ?>"><?php echo $svc['title']; ?></a></li>
             <?php endforeach; ?>
           </ul>
         </li>
@@ -50,7 +50,7 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Commercial</a>
           <ul class="dropdown-menu">
             <?php foreach ($config['commercial_services'] as $svc): ?>
-              <li><a class="dropdown-item" href="#"><?php echo $svc['title']; ?></a></li>
+              <li><a class="dropdown-item" href="service.php?s=<?php echo $svc['slug']; ?>"><?php echo $svc['title']; ?></a></li>
             <?php endforeach; ?>
           </ul>
         </li>
