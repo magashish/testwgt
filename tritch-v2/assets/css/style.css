@@ -918,8 +918,8 @@ footer a:hover { color: var(--white); }
   border-color: var(--red);
 }
 
-.gallery-item { transition: opacity .3s, transform .3s; }
-.gallery-item.hidden { opacity: 0; pointer-events: none; transform: scale(.95); }
+.gallery-item { transition: opacity .25s, transform .25s; }
+.gallery-item.hidden { display: none; }
 
 .gallery-img-wrap { position: relative; overflow: hidden; }
 .gallery-overlay {
