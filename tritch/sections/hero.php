@@ -1,5 +1,15 @@
 <!-- =============== HERO =============== -->
 <section id="hero" aria-label="Hero">
+
+  <!-- Background carousel (fade) — swap src images when assets are ready -->
+  <div class="hero-bg-carousel" aria-hidden="true">
+    <div class="hero-slide active" style="background-image:url('/assets/images/hero-garage-door.jpg');"></div>
+    <div class="hero-slide"        style="background-image:url('/assets/images/hero-entry-door.jpg');"></div>
+    <div class="hero-slide"        style="background-image:url('/assets/images/hero-windows.jpg');"></div>
+    <div class="hero-slide"        style="background-image:url('/assets/images/hero-commercial.jpg');"></div>
+  </div>
+  <div class="hero-bg-overlay" aria-hidden="true"></div>
+
   <div class="container hero-content">
     <div class="row">
       <div class="col-lg-7 fade-up">
