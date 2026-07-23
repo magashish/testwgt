@@ -128,129 +128,51 @@ $filterCategories = [
   </div>
 </section>
 
-<!-- =============== TESTIMONIAL IMAGE SLIDER =============== -->
-<?php
-$sliderReviews = [
-  ['photo'=>'/assets/images/reviewer-jason.jpg',  'name'=>'Jason M.',  'city'=>'Fremont, OH',     'service'=>'Garage Door Installation',
-   'text'=>'Tritch did an amazing job on our new garage door. The installers were professional, on time, and the quality is outstanding. I couldn\'t be happier — the whole neighborhood has been asking who did the work.'],
-  ['photo'=>'/assets/images/reviewer-diane.jpg',  'name'=>'Diane W.',  'city'=>'Sandusky, OH',    'service'=>'Entry Door Installation',
-   'text'=>'From the showroom visit to final installation, every step was handled with care. Our new front door looks stunning and the energy savings have been noticeable since day one. True professionals.'],
-  ['photo'=>'/assets/images/reviewer-tom.jpg',    'name'=>'Tom B.',    'city'=>'Norwalk, OH',     'service'=>'Window Replacement',
-   'text'=>'We had three windows replaced and the crew was in and out in one day. Clean, efficient, and the windows look beautiful. Noticed an immediate difference in comfort and noise reduction.'],
-  ['photo'=>'/assets/images/reviewer-mark.jpg',   'name'=>'Mark T.',   'city'=>'Sandusky, OH',    'service'=>'Commercial Doors',
-   'text'=>'Our commercial overhead door replacement was completed on schedule and within budget. Excellent communication from start to finish. Tritch has earned our business for years to come.'],
-  ['photo'=>'/assets/images/reviewer-sarah.jpg',  'name'=>'Sarah L.',  'city'=>'Tiffin, OH',      'service'=>'Entry Door Installation',
-   'text'=>"Professional service and outstanding workmanship. We've used Tritch for multiple projects and they never disappoint. The quality and attention to detail is second to none."],
-  ['photo'=>'/assets/images/reviewer-rachel.jpg', 'name'=>'Rachel M.', 'city'=>'Port Clinton, OH','service'=>'Window Replacement',
-   'text'=>'Wonderful experience from start to finish. The estimate was fair and honest, and the installers were polite and professional. The new windows have already cut our heating bills.'],
-];
-?>
-<section id="testimonial-slider" aria-labelledby="ts-heading">
+<!-- =============== IMAGE SLIDER =============== -->
+<section id="photo-slider">
   <div class="container">
 
-    <div class="text-center mb-5 fade-up">
-      <span class="section-label">Customer Stories</span>
-      <div class="section-divider mx-auto"></div>
-      <h2 id="ts-heading">Hear It From Our Customers</h2>
-      <p style="max-width:480px;margin:.5rem auto 0;color:var(--muted);">
-        Real people. Real projects. Across Northwest Ohio since 1947.
-      </p>
-    </div>
+    <div id="reviewPhotoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
 
-    <div class="ts-slider-wrap fade-up">
-
-      <!-- Prev button -->
-      <button class="ts-arrow ts-arrow-prev" id="tsPrev" aria-label="Previous review">
-        <i class="bi bi-chevron-left"></i>
-      </button>
-
-      <!-- Track -->
-      <div class="ts-track-outer">
-        <div class="ts-track" id="tsTrack">
-          <?php foreach ($sliderReviews as $i => $r): ?>
-            <div class="ts-card <?php echo $i === 0 ? 'ts-active' : ''; ?>" role="group" aria-label="Review <?php echo $i+1; ?>">
-              <!-- Reviewer photo -->
-              <div class="ts-photo-wrap">
-                <img src="<?php echo $r['photo']; ?>"
-                     alt="<?php echo htmlspecialchars($r['name']); ?>"
-                     class="ts-photo"
-                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-                <div class="ts-photo-fallback" style="display:none;">
-                  <?php echo strtoupper(substr($r['name'], 0, 1)); ?>
-                </div>
-              </div>
-              <!-- Stars -->
-              <div class="ts-stars" aria-label="5 stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <!-- Quote -->
-              <p class="ts-text">"<?php echo htmlspecialchars($r['text']); ?>"</p>
-              <!-- Author -->
-              <div class="ts-name"><?php echo htmlspecialchars($r['name']); ?></div>
-              <div class="ts-meta">
-                <i class="bi bi-geo-alt-fill me-1" style="color:var(--red);font-size:.7rem;"></i>
-                <?php echo htmlspecialchars($r['city']); ?>
-                <span class="ts-sep">·</span>
-                <?php echo htmlspecialchars($r['service']); ?>
-              </div>
-              <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg"
-                   alt="Google" class="ts-google-logo">
-            </div>
-          <?php endforeach; ?>
+      <div class="carousel-inner rounded overflow-hidden">
+        <div class="carousel-item active">
+          <img src="/assets/images/slider-1.jpg" class="d-block w-100 photo-slide-img" alt="Tritch project photo 1">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/images/slider-2.jpg" class="d-block w-100 photo-slide-img" alt="Tritch project photo 2">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/images/slider-3.jpg" class="d-block w-100 photo-slide-img" alt="Tritch project photo 3">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/images/slider-4.jpg" class="d-block w-100 photo-slide-img" alt="Tritch project photo 4">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/images/slider-5.jpg" class="d-block w-100 photo-slide-img" alt="Tritch project photo 5">
         </div>
       </div>
 
-      <!-- Next button -->
-      <button class="ts-arrow ts-arrow-next" id="tsNext" aria-label="Next review">
-        <i class="bi bi-chevron-right"></i>
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewPhotoCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewPhotoCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
       </button>
 
-    </div>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#reviewPhotoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#reviewPhotoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#reviewPhotoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#reviewPhotoCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#reviewPhotoCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
 
-    <!-- Dot indicators -->
-    <div class="ts-dots" id="tsDots" aria-label="Review navigation">
-      <?php foreach ($sliderReviews as $i => $r): ?>
-        <button class="ts-dot <?php echo $i === 0 ? 'ts-dot-active' : ''; ?>"
-                data-idx="<?php echo $i; ?>"
-                aria-label="Go to review <?php echo $i+1; ?>"></button>
-      <?php endforeach; ?>
     </div>
 
   </div>
 </section>
-
-<script>
-(function () {
-  const track  = document.getElementById('tsTrack');
-  const cards  = track ? Array.from(track.querySelectorAll('.ts-card')) : [];
-  const dots   = Array.from(document.querySelectorAll('#tsDots .ts-dot'));
-  if (!cards.length) return;
-
-  let current = 0;
-  let timer;
-
-  function goTo(idx) {
-    cards[current].classList.remove('ts-active');
-    dots[current] && dots[current].classList.remove('ts-dot-active');
-    current = (idx + cards.length) % cards.length;
-    cards[current].classList.add('ts-active');
-    dots[current] && dots[current].classList.add('ts-dot-active');
-  }
-
-  function startTimer() {
-    clearInterval(timer);
-    timer = setInterval(() => goTo(current + 1), 6000);
-  }
-
-  document.getElementById('tsPrev') && document.getElementById('tsPrev').addEventListener('click', () => { goTo(current - 1); startTimer(); });
-  document.getElementById('tsNext') && document.getElementById('tsNext').addEventListener('click', () => { goTo(current + 1); startTimer(); });
-  dots.forEach(dot => dot.addEventListener('click', () => { goTo(+dot.dataset.idx); startTimer(); }));
-
-  startTimer();
-})();
-</script>
 
 <script>
 (function () {
